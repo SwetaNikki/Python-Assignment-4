@@ -14,3 +14,4 @@ def word_length_list(long_list):
 print("Word List        =>  {}".format(word_list)) 
 print("Word Length list =>  {}".format(word_length_list(word_list))) 
 
+
