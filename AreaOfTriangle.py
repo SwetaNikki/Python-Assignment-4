@@ -7,6 +7,7 @@ class and function to calculate the area should be defined in subclass.
 
 """
 import math
+
 class TakingInput:
     def __init__(self,a,b,c):
         self.a = a
@@ -16,9 +17,9 @@ a = int(input("Enter a value : "))
 b = int(input("Enter b value : "))
 c = int(input("Enter c value : "))
         
-class AreaOfTriangle():
+class AreaOfTriangle(TakingInput):
     def __init__(self,a,b,c):
-        TakingInput.__init__(self,a,b,c)
+        super().__init__(a,b,c)
       
     def area(self):
         s=(a+b+c)/2
@@ -28,3 +29,4 @@ class AreaOfTriangle():
         
 ob = AreaOfTriangle(a,b,c)
 print("Area of Triangle : {}".format(ob.area()))
+
